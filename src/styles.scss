@@ -1,1 +1,46 @@
 /* You can add global styles to this file, and also import other style files */
+$dark-color: #111;
+$light-color: #eee;
+
+body.dark-mode {
+  background-color: $dark-color;
+  color: $light-color;
+  a {
+    color: $light-color;
+  }
+  button {
+    background-color: $light-color;
+    color: $dark-color;
+  }
+}
+
+body.light-mode {
+  background-color: $light-color;
+  color: $dark-color;
+  a {
+    color: $dark-color;
+  }
+  button {
+    background-color: $dark-color;
+    color: $light-color;
+  }
+}
+
+.nav {
+    align-items: flex-end;
+}
+
+.align-right {
+    position: absolute;
+    right: 10%;
+    width: 300px;
+    padding: 10px;
+}
+
+.centre{
+    text-align: center;
+}
+
+.s11{
+    font-size: 50px;
+}
