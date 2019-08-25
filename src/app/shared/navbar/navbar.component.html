@@ -1,0 +1,18 @@
+<mat-toolbar color="black">
+    <mat-toolbar-row>
+      <h1>{{title}}</h1>
+      <span class="menu-spacer"></span>
+      
+      <div class="d-flex flex-row-reverse float-right">
+        <a mat-button [routerLink]="'/home'"> Home </a>
+        <a mat-button [routerLink]="'/productServices'"> Product & Services </a>
+        <a mat-button [routerLink]="'/about'"> About Us </a>
+        <a mat-button [routerLink]="'/contact'"> Contact Us </a>
+      </div>
+
+      <button mat-icon-button>
+        <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+      </button>
+    </mat-toolbar-row>
+  </mat-toolbar>
+  <hr>
