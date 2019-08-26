@@ -30,10 +30,14 @@ body.light-mode {
     align-items: flex-end;
 }
 
+.p-50{
+  padding: 50px;
+}
+
 .align-right {
     position: absolute;
     right: 10%;
-    width: 300px;
+    width: 450px;
     padding: 10px;
 }
 
@@ -43,4 +47,76 @@ body.light-mode {
 
 .s11{
     font-size: 50px;
+}
+
+hr.light-mode{
+  color: #111
+}
+
+hr.dark-mode{
+  color: rgb(255, 255, 255)
+}
+
+.column{
+  float: left;
+  width: 33.33% !important;
+}
+
+.column{
+  .bold{
+    size: 20px;
+    font-weight: bold !important;
+  }
+}
+
+.italic{
+  font-style: italic;
+}
+
+.content{
+  color: #7e7e7e
+}
+
+.fs64{
+  font-size: 64px !important;
+}
+
+.fs32{
+  font-size: 32px !important;
+}
+
+.m-b-100{
+  margin-bottom: 100px;
+}
+
+.m-b-50{
+  margin-bottom: 50px;
+}
+
+.m-b-10{
+  margin-bottom: 10px !important;
+}
+
+.light-mode{
+  .btn{
+    background-color: #ffffff !important;
+  }
+}
+
+.dark-mode{
+  .btn{
+    background-color: rgb(0, 0, 0) !important;
+  }
+}
+
+.light-mode{
+  .icon{
+    color: rgb(0, 0, 0) !important;
+  }
+}
+
+.dark-mode{
+  .icon{
+    color: #ffffff !important;
+  }
 }
