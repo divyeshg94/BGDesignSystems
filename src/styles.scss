@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 $dark-color: #111;
 $light-color: #eee;
+$text: #fff;
 
 body.dark-mode {
   background-color: $dark-color;
@@ -57,6 +58,16 @@ hr.dark-mode{
   color: rgb(255, 255, 255)
 }
 
+.width-50{
+  float: left;
+  width: 50% !important;
+}
+
+.width-30{
+  float: left;
+  width: 30% !important;
+}
+
 .column{
   float: left;
   width: 33.33% !important;
@@ -85,6 +96,26 @@ hr.dark-mode{
   font-size: 32px !important;
 }
 
+.fs16{
+  font-size: 16px !important;
+}
+
+.fs10{
+  font-size: 10px !important;
+}
+
+.m-b-170{
+  margin-bottom: 170px;
+}
+
+.m-b-160{
+  margin-bottom: 160px;
+}
+
+.m-b-150{
+  margin-bottom: 150px;
+}
+
 .m-b-100{
   margin-bottom: 100px;
 }
@@ -95,6 +126,14 @@ hr.dark-mode{
 
 .m-b-10{
   margin-bottom: 10px !important;
+}
+
+.m-l-50{
+  margin-left: 50px;
+} 
+
+.m-l-10{
+  margin-left: 10px;
 }
 
 .light-mode{
@@ -119,4 +158,10 @@ hr.dark-mode{
   .icon{
     color: #ffffff !important;
   }
+}
+
+.text {
+	position: absolute;
+	color: $text;
+	text-shadow: 0px 0px 2px #131415;
 }

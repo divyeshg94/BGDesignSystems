@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ProductServicesComponent } from './product-services/product-services.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FooterComponent } from './shared/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AboutComponent,
     ProductServicesComponent,
     NavbarComponent,
-    ContactComponent
+    ContactComponent,
+    FooterComponent
   ],
   imports: [
     MaterialModule,
