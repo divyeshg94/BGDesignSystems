@@ -50,12 +50,16 @@ body.light-mode {
     font-size: 50px;
 }
 
-hr.light-mode{
-  color: #111
+.light-mode{
+  hr{
+    background-color: #111
+  }
 }
 
-hr.dark-mode{
-  color: rgb(255, 255, 255)
+.dark-mode{
+  hr{
+    background-color: rgb(255, 255, 255)
+  }
 }
 
 .width-50{
