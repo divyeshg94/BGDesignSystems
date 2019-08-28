@@ -2,7 +2,7 @@ import {Injectable} from "@angular/core";
 
 @Injectable()
 export class GlobalService {
-    private isShowAllSPA: boolean;
+    private isShowAllSPA: boolean = false;
 
     constructor() {}
 

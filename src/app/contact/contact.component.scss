@@ -69,3 +69,30 @@
 .bg-wht{
   background:white; 
 }
+
+.contact-div{
+  padding:3px 3px;
+}
+
+.contact-field{
+  padding:3px 3px;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.centre{
+  margin:auto !important;
+  display:block;
+  align-content: center;
+}
+
+.contact-textwidth{
+  width: 189px;
+  float:left;
+}
+
+button{
+  margin:auto !important;
+  display:block;
+  padding: 3px 3px;
+}

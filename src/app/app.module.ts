@@ -13,6 +13,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FooterComponent } from './shared/footer/footer.component';
 import { GlobalService } from './shared/globalservice';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { InnovativeComponent } from './innovative/innovative.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ProductServicesComponent,
     NavbarComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    InnovativeComponent
   ],
   imports: [
     MaterialModule,

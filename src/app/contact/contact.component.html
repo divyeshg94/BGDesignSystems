@@ -33,18 +33,26 @@
             <div class="contact-bg-white bg-wht">
               <form [formGroup]="addressForm" novalidate (ngSubmit)="onSubmit()">
                 <mat-card class="shipping-card blk">
-                  <mat-card-header>
+                  <mat-card-header class="centre">
                     <mat-card-title>Contact Us</mat-card-title>
                   </mat-card-header>
                   <mat-card-content>
-                    <div class="input-wrapper">
-                      <input id="employee-id" aria-describedby="employee-id-hint" name="id-number" placeholder="asd"
-                        type="text" />
+                    <div class="input-wrapper contact-div">
+                      <input id="Name" class="contact-field contact-textwidth" name="Name" placeholder="Name" type="text" />
+                      <input id="Email"  class="contact-field contact-textwidth" name="Email" placeholder="Email" type="text" />
+                    </div>
+                    <br/>
+                    <div class="m-b-10"></div>
+                    <div class="input-wrapper contact-div">
+                      <input id="Subject" class="contact-field" style="width:100%" name="Subject" placeholder="Subject" type="text" />
+                    </div>
+                    <div class="input-wrapper contact-div">
+                        <textarea id="Message" class="contact-field" rows="5" cols="50" placeholder="Message"></textarea>
                     </div>
 
                   </mat-card-content>
                   <mat-card-actions>
-                    <button mat-raised-button color="primary" type="submit">Submit</button>
+                    <button mat-raised-button color="primary" class="centre" type="submit">Submit</button>
                   </mat-card-actions>
                 </mat-card>
               </form>

@@ -27,6 +27,11 @@ body.light-mode {
   }
 }
 
+a:hover {
+  color: #e21818 !important;
+  text-decoration: none !important;
+}
+
 .dark-mode {
   background-color: $dark-color;
   color: $light-color;
@@ -134,8 +139,16 @@ body.light-mode {
   margin-bottom: 140px;
 }
 
+.m-b-130{
+  margin-bottom: 130px;
+}
+
 .m-b-100{
   margin-bottom: 100px;
+}
+
+.m-b-60{
+  margin-bottom: 60px;
 }
 
 .m-b-50{

@@ -1,4 +1,5 @@
 import { Component, OnInit, HostListener, ViewChild, ElementRef } from '@angular/core';
+import { GlobalService } from '../globalservice';
 
 @Component({
   selector: 'app-navbar',
@@ -7,14 +8,19 @@ import { Component, OnInit, HostListener, ViewChild, ElementRef } from '@angular
 })
 export class NavbarComponent implements OnInit {
   title = "BG Design Systems";
+  logo = "../../../assets/images/Logo.png";
   navColor = "black";
   buttonColor = "white";
   @ViewChild("navBar", { static: false }) navBar: ElementRef;
 
-  constructor() { }
+  constructor(private globalService: GlobalService) { }
 
   ngOnInit() {
 
+  }
+
+  public isShowAll(){
+    return this.globalService.getValue();
   }
 
   @HostListener("window:scroll", [])
@@ -24,11 +30,11 @@ export class NavbarComponent implements OnInit {
     if (number < 300) {
       this.navColor = "black";
       this.buttonColor = "white";
-      console.log('You are ' + number + 'from the top to bottom');
+      this.logo = "../../../assets/images/Logo.png";
     } else if (number > 300) {
       this.buttonColor = "black";
       this.navColor = "white";
-      console.log('You are 500px from the top to bottom');
+      this.logo="../../../assets/images/Logo-black.png";
     }
   }
 }
