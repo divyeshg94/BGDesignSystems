@@ -1,0 +1,71 @@
+.full-width {
+    width: 100%;
+  }
+  
+  .shipping-card {
+    min-width: 120px;
+    max-width: 620px;
+    margin: 20px auto;
+  }
+  
+  .mat-radio-button {
+    display: block;
+    margin: 5px 0;
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .col {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .col:last-child {
+    margin-right: 0;
+  }
+
+  .contact-bg-white{
+    background-color: white;
+  }
+
+  .blk{
+    color: black !important;
+  }
+
+  .position.abs{
+    position: absolute;
+  }
+
+.container{
+  margin-left: unset
+}
+  .container .box { 
+    width:100%; 
+    margin:50px; 
+    display:table; 
+} 
+.container .box .box-row { 
+    display:table-row; 
+} 
+.container .box .box-cell { 
+    display:table-cell; 
+    width:50%; 
+    padding:10px; 
+} 
+.container .box .box-cell.box1 { 
+    color:white;     
+    width: 70%;
+    text-align:justify; 
+ } 
+.container .box .box-cell.box2 { 
+    text-align:justify;
+    height:300px;
+    width:30%
+} 
+
+.bg-wht{
+  background:white; 
+}

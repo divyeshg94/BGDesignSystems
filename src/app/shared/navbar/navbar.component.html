@@ -1,12 +1,12 @@
-<mat-toolbar color="black">
+<mat-toolbar color="black" class="dark-mode fixed-top navbar-transparent" [style.background-color]="navColor" color-on-scroll="500">
     <mat-toolbar-row>
       <img src="../../../assets/images/Logo.png" alt="BG Design Systems" class="logo"/>
 
       <div class="align-right">
-        <a mat-button [routerLink]="'/home'"> Home </a>
-        <a mat-button [routerLink]="'/productServices'"> Product & Services </a>
-        <a mat-button [routerLink]="'/about'"> About Us </a>
-        <a mat-button [routerLink]="'/contact'"> Contact Us </a>
+        <a mat-button [routerLink]="'/home'" [style.color]="buttonColor"> Home </a>
+        <a mat-button [routerLink]="'/productServices'" [style.color]="buttonColor"> Product & Services </a>
+        <a mat-button [routerLink]="'/about'" [style.color]="buttonColor"> About Us </a>
+        <a mat-button [routerLink]="'/contact'" [style.color]="buttonColor"> Contact Us </a>
         
         <button class="btn" mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
             <mat-icon class="icon">more_vert</mat-icon>
@@ -26,7 +26,5 @@
             </button> -->
           </mat-menu>
       </div>
-     
     </mat-toolbar-row>
   </mat-toolbar>
-  <hr>

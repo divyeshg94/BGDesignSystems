@@ -11,6 +11,8 @@ import { AboutComponent } from './about/about.component';
 import { ProductServicesComponent } from './product-services/product-services.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FooterComponent } from './shared/footer/footer.component';
+import { GlobalService } from './shared/globalservice';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,9 +28,11 @@ import { FooterComponent } from './shared/footer/footer.component';
     MaterialModule,
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [GlobalService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

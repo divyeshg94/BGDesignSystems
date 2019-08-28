@@ -1,38 +1,61 @@
-<div class="m-l-50">
-    <div class="m-b-170"></div>
-    <mat-list>
-        <mat-list-item>
-            <p matLine class="fs32"> Get in Touch! </p>
-            <p matLine class="italic content"> You need more information about us?</p>
-        </mat-list-item>
-        <br />
-        <mat-list-item>
-            <p matLine class="fs32"> Find us at the office </p>
-            <p matLine class="italic content"> BG Design Systems</p>
-            <p matLine class="italic content"> NO: 134/15  SIDCO NP IE, Ambattur, Chennai - 98</p>
-        </mat-list-item>
-        <br/>
-        <mat-list-item>
+<div class="" [ngStyle]="{background: 'url(../../assets/images/pillar.jfif)'}">
+  <br />
+  <div class="m-b-170"></div>
+  <div class="container">
+    <div class="box">
+      <div class="box-row">
+        <div class="box-cell box1">
+          <div class="m-l-50">
+            <br />
+            <mat-list>
+              <mat-list-item>
+                <p matLine class="fs32"> Get in Touch! </p>
+                <p matLine class="italic"> You need more information about us?</p>
+              </mat-list-item>
+              <br />
+              <mat-list-item>
+                <p matLine class="fs32"> Find us at the office </p>
+                <p matLine class="italic"> BG Design Systems</p>
+                <p matLine class="italic"> NO: 134/15 SIDCO NP IE, Ambattur, Chennai - 98</p>
+              </mat-list-item>
+              <br />
+              <mat-list-item>
                 <p matLine class="fs32"> Give us a ring </p>
-                <p matLine class="italic content"> Baskaran M +91 994 396 1227 (MON - FRI, 08:00 - 22:00)</p>
-            </mat-list-item>
-    </mat-list>
-    <div class="m-b-150"></div>
+                <p matLine class="italic"> Baskaran M +91 994 396 1227 (MON - FRI, 08:00 - 22:00)</p>
+              </mat-list-item>
+            </mat-list>
+            <div class="m-b-150"></div>
+            <br />
+          </div>
+        </div>
+        <div class="box-cell box2">
+          <div id="contact2">
+            <div class="contact-bg-white bg-wht">
+              <form [formGroup]="addressForm" novalidate (ngSubmit)="onSubmit()">
+                <mat-card class="shipping-card blk">
+                  <mat-card-header>
+                    <mat-card-title>Contact Us</mat-card-title>
+                  </mat-card-header>
+                  <mat-card-content>
+                    <div class="input-wrapper">
+                      <input id="employee-id" aria-describedby="employee-id-hint" name="id-number" placeholder="asd"
+                        type="text" />
+                    </div>
+
+                  </mat-card-content>
+                  <mat-card-actions>
+                    <button mat-raised-button color="primary" type="submit">Submit</button>
+                  </mat-card-actions>
+                </mat-card>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br />
+  <div class="m-b-150"></div>
+  <br />
 </div>
-<!-- 
-<div class="example-container">
-        <mat-form-field>
-          <input matInput placeholder="Input">
-        </mat-form-field>
-      
-        <mat-form-field>
-          <textarea matInput placeholder="Textarea"></textarea>
-        </mat-form-field>
-      
-        <mat-form-field>
-          <mat-select placeholder="Select">
-            <mat-option value="option">Option</mat-option>
-          </mat-select>
-        </mat-form-field>
-    </div> -->
-<hr/>
+<hr />

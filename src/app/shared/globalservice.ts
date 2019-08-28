@@ -1,0 +1,16 @@
+import {Injectable} from "@angular/core";
+
+@Injectable()
+export class GlobalService {
+    private isShowAllSPA: boolean;
+
+    constructor() {}
+
+    setValue(val: boolean) {
+        this.isShowAllSPA = val;
+    }
+
+    getValue() {
+        return this.isShowAllSPA;
+    }
+}

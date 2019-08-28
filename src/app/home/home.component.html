@@ -1,6 +1,7 @@
 <div class="centre" [ngStyle]="{background: 'url(../../assets/images/Frontpagebg.jpg)'}">
     <mat-list>
-    <div class="m-b-150"></div>
+        <br/>
+    <div class="m-b-140"></div>
         <mat-list-item>
             <p matLine class="fs32"> Welcome to BG Design Systems </p>
             <p matLine class="fs32"> for </p>
@@ -8,7 +9,7 @@
             <p matLine class="fs64">Solution</p>
         </mat-list-item>
     </mat-list>
-    <button mat-button color="primary">Discover More</button>
+    <button mat-button (click)="handleClick($event)" type="button">Discover More</button>
     <div class="m-b-150"></div>
     <br/>
 </div>
