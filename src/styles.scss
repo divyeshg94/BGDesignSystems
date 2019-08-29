@@ -7,7 +7,7 @@ body.dark-mode {
   background-color: $dark-color;
   color: $light-color;
   a {
-    color: $dark-color;
+    color: $light-color;
   }
   button {
     background-color: $light-color;
@@ -87,6 +87,11 @@ a:hover {
   width: 30% !important;
 }
 
+.column-4{
+  float: left;
+  width: 25% !important;
+}
+
 .column{
   float: left;
   width: 33.33% !important;
@@ -107,12 +112,20 @@ a:hover {
   color: #7e7e7e
 }
 
+.fs67{
+  font-size: 67px !important;
+}
+
 .fs64{
   font-size: 64px !important;
 }
 
 .fs32{
   font-size: 32px !important;
+}
+
+.fs21{
+  font-size: 21px !important;
 }
 
 .fs16{
@@ -194,6 +207,7 @@ a:hover {
 .text {
 	// position: absolute;
   color: $text;
+  scroll-behavior: smooth
   // background-color: white;
 	// text-shadow: 0px 0px 2px #131415;
 }

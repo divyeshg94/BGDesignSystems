@@ -27,14 +27,14 @@ export class NavbarComponent implements OnInit {
   onWindowScroll() {
 
     const number = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
-    if (number < 300) {
-      this.navColor = "black";
-      this.buttonColor = "white";
-      this.logo = "../../../assets/images/Logo.png";
-    } else if (number > 300) {
-      this.buttonColor = "black";
-      this.navColor = "white";
-      this.logo="../../../assets/images/Logo-black.png";
-    }
+    // if (number < 300) {
+    //   this.navColor = "black";
+    //   this.buttonColor = "white";
+    //   this.logo = "../../../assets/images/Logo.png";
+    // } else if (number > 300) {
+    //   this.buttonColor = "black";
+    //   this.navColor = "white";
+    //   this.logo="../../../assets/images/Logo-black.png";
+    // }
   }
 }

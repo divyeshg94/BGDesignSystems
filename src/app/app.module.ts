@@ -14,6 +14,8 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { GlobalService } from './shared/globalservice';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { InnovativeComponent } from './innovative/innovative.component';
+import { OverviewComponent } from './overview/overview.component';
+import { ServicesComponent } from './services/services.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { InnovativeComponent } from './innovative/innovative.component';
     NavbarComponent,
     ContactComponent,
     FooterComponent,
-    InnovativeComponent
+    InnovativeComponent,
+    OverviewComponent,
+    ServicesComponent
   ],
   imports: [
     MaterialModule,
