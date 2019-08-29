@@ -16,7 +16,7 @@ export class AppComponent implements OnInit{
   constructor(private globalService: GlobalService) {
   }
   public ngOnInit(): void {
-    //  this.invokeParticles();
+     //this.invokeParticles();
   }
 
   public invokeParticles(): void {
